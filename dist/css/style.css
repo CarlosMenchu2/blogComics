@@ -301,8 +301,33 @@ template {
   width: 100%;
   height: 35px; }
 
+.responsive {
+  width: 100%;
+  height: auto; }
+
+label {
+  padding: 0; }
+
+.menu-hamburguesa {
+  display: none;
+  text-align: center; }
+  .menu-hamburguesa .fa-bars {
+    color: white; }
+
+#check {
+  display: none; }
+
 @media only screen and (max-width: 640px) {
   ul {
+    display: none; }
+  .menu-hamburguesa {
+    display: block;
+    float: right;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer; }
+  #check:checked + ul {
+    display: block;
     width: 100%; }
-    ul li {
+    #check:checked + ul li {
       text-align: center; } }

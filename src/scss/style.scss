@@ -8,12 +8,49 @@
     height: 35px;
 }
 
+.responsive {
+
+    width: 100%;
+    height: auto;
+}
+
+label{
+    padding: 0;
+}
+
+.menu-hamburguesa{
+    display: none;
+    text-align: center;
+    
+    .fa-bars{
+     color: white;
+    }
+ }
+
+#check{
+    display: none;
+ }
+
+
 @media only screen and (max-width: 640px) {
     ul {
-      width: 100%;
-
-      li {
-          text-align: center;
-      }
+      display: none;
     }
-  }
+
+    .menu-hamburguesa{
+        display: block;
+        float: right;
+        font-size: 30px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    #check:checked + ul {
+        display: block;
+        width: 100%;
+        li{
+            text-align: center;
+        }
+        
+    }
+}
