@@ -70,4 +70,4 @@ function minifyjsTask(d) {
 }
 
 
-exports.default = series(scssTask,minifycssTask,minifyjsTask, serveTask, watchTask);
+exports.default = series(scssTask,minifycssTask, serveTask, watchTask);
