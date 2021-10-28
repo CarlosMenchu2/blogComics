@@ -1,2 +1,7 @@
 # blogComics
-This is a repository for Comics Blog
+
+Blog de comics
+
+Hecho con:
+HTML
+CSS
